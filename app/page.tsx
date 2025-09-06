@@ -1323,6 +1323,39 @@ export default function KawibawaWebsite() {
                   </div>
                 </div>
               </div>
+
+              {/* Google Maps */}
+              <div>
+                <h3 className="text-2xl font-bold text-amber-900 mb-6">
+                  Lokasi Kami
+                </h3>
+                <div className="rounded-lg overflow-hidden shadow-lg">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.123456789!2d107.01516885767087!3d-6.931290615916871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTUnNTIuNiJTIDEwN8KwMDAnNTQuNiJF!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid"
+                    width="100%"
+                    height="300"
+                    style={{ border: 0 }}
+                    allowFullScreen={true}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="w-full h-[300px]"
+                  ></iframe>
+                  <div className="p-4 bg-amber-50 border-t border-amber-100">
+                    <button
+                      onClick={() =>
+                        window.open(
+                          "https://maps.app.goo.gl/FEUDmLXf2ekon5cG6?g_st=aw",
+                          "_blank"
+                        )
+                      }
+                      className="w-full bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center space-x-2"
+                    >
+                      <MapPin className="w-4 h-4" />
+                      <span>Buka di Google Maps</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* CTA Buttons */}
